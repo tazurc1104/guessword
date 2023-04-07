@@ -10,12 +10,37 @@ const words = [
   "MANGO",
   "LEMON",
   "PLUMS",
-  "DOORS",
-  "FOODS",
   "PLACES",
-  "GREEN",
-  "YELLOW",
- 
+  "PHONE",
+  "CLOCK",
+  "BOARD",
+  "BREAD",
+  "ADULT",
+  "BLACK",
+  "BLAME",
+  "BLIND",
+  "BLOOD",
+  "COVER",
+  "CHINA",
+  "BROKE",
+  "DRIVE",
+  "DELAY",
+  "RELAY",
+  "ENJOY",
+  "MOUTH",
+  "MOUSE",
+  "MOVIE",
+  "ROUGH",
+  "TIMES",
+  "WOUND",
+  "WRITE",
+  "RIGHT",
+  "WHITE",
+  "VITAL",
+  "VOICE",
+  "VIRUS",
+  "COVID",
+
 ];
 const randomIndex = Math.floor(Math.random() * words.length);
 const word = words[randomIndex];
@@ -36,8 +61,11 @@ letterButtons.forEach(button => {
 });
 
 eraseButton.addEventListener("click", function() {
-  boxes[startingIndex-1].textContent = '';
-  startingIndex--;
+  if (endingIndex - startingIndex <= 4){
+    boxes[startingIndex-1].textContent = '';
+    startingIndex--;
+  }
+  
 });
 
 
@@ -59,9 +87,21 @@ goButton.addEventListener("click", function(){
           }, 3000); // 3000 milliseconds = 3 seconds
         }
       }
+      else {
+        for (var j = 0; j < word.length; j++){
+          if (guess[i] === word[j] && i !== j){
+            boxes[startingBox].style.backgroundColor = "yellow";
+          }
+        }
+      }
+    
+      
+      
       startingBox++;
     }
+   
   }
+  
   correct = 0;
   guess = ""
 });
