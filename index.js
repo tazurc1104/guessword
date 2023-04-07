@@ -13,7 +13,9 @@ const words = [
   "DOORS",
   "FOODS",
   "PLACES",
-
+  "GREEN",
+  "YELLOW",
+ 
 ];
 const randomIndex = Math.floor(Math.random() * words.length);
 const word = words[randomIndex];
@@ -57,21 +59,9 @@ goButton.addEventListener("click", function(){
           }, 3000); // 3000 milliseconds = 3 seconds
         }
       }
-      else {
-        for (var j = 0; j < word.length; j++){
-          if (guess[i] === word[j] && i !== j){
-            boxes[startingBox].style.backgroundColor = "yellow";
-          }
-        }
-      }
-    
-      
-      
       startingBox++;
     }
-   
   }
-  
   correct = 0;
   guess = ""
 });
