@@ -81,7 +81,7 @@ goButton.addEventListener("click", function(){
         }
         }
         correct = 0;
-        guess ='';
+        document.getElementById('guess-input').value ='';
         
     
 });
