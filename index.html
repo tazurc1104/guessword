@@ -4,29 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <title>Guess the Word</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Guess the word</title>
 </head>
 <body>
-    
     <div class="container">
-        <div class="header">
-            <h1 class = "page-header">Guess the word</h1>
+        <div class="container-header">
+            <h1 class ="page-header">Guess the Word</h1>
         </div>
-        <div class="letter-boxes">
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
-            <div class="boxes"></div>
+
+        <div class="boxes-container">
             <div class="boxes"></div>
             <div class="boxes"></div>
             <div class="boxes"></div>
@@ -68,41 +58,13 @@
             <div class="boxes"></div>
             <div class="boxes"></div>
         </div>
-        <div class="go-erase">
+
+        <div class="guess">
+            <label for="guess">Enter your Guess:</label>
+            <input type="text" name="guess" id="guess-input">
             <button class="go-button">GO</button>
-            <button class="erase-button">⌫</button>
-        </div>
-        <div class="buttons-container">
-            <button class="letters-buttons">A</button>
-            <button class="letters-buttons">B</button>
-            <button class="letters-buttons">C</button>
-            <button class="letters-buttons">D</button>
-            <button class="letters-buttons">E</button>
-            <button class="letters-buttons">F</button>
-            <button class="letters-buttons">G</button>
-            <button class="letters-buttons">H</button>
-            <button class="letters-buttons">I</button>
-            <button class="letters-buttons">J</button>
-            <button class="letters-buttons">K</button>
-            <button class="letters-buttons">L</button>
-            <button class="letters-buttons">M</button>
-            <button class="letters-buttons">N</button>
-            <button class="letters-buttons">Ñ</button>
-            <button class="letters-buttons">O</button>
-            <button class="letters-buttons">P</button>
-            <button class="letters-buttons">Q</button>
-            <button class="letters-buttons">R</button>
-            <button class="letters-buttons">S</button>
-            <button class="letters-buttons">T</button>
-            <button class="letters-buttons">U</button>
-            <button class="letters-buttons">V</button>
-            <button class="letters-buttons">W</button>
-            <button class="letters-buttons">X</button>
-            <button class="letters-buttons">Y</button>
-            <button class="letters-buttons">Z</button>
         </div>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
