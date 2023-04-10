@@ -81,7 +81,8 @@ goButton.addEventListener("click", function(){
         }
         }
         correct = 0;
-    
+        guess ='';
+        
     
 });
 
